@@ -1,0 +1,17 @@
+{
+    -fx-background-color: black;
+}
+
+.button{
+    -fx-background-color: grey;
+}
+
+.label{
+    -fx-background-color: white;
+}
+
+#btn0{
+    -fx-background-radius: 100%;
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+}

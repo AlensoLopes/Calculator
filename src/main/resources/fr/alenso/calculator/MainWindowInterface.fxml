@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.alenso.calculator.MainWindowController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.alenso.calculator.MainWindowController">
    <children>
       <Button fx:id="btnClose" layoutX="542.0" layoutY="1.0" mnemonicParsing="false" text="Close" />
       <Button fx:id="btnMinimize" layoutX="478.0" layoutY="1.0" mnemonicParsing="false" text="minimize" />

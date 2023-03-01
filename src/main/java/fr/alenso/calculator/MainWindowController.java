@@ -13,6 +13,7 @@ public class MainWindowController {
 
     String operator = "";
     private int num1;
+    private boolean hist;
 
     public void init(Stage stage){
         btnClose.setOnMouseClicked(mouseEvent -> stage.close());
@@ -20,6 +21,11 @@ public class MainWindowController {
     }
 
     public void onNumberClicked(ActionEvent event){
+        if(hist){
+            historyLabel.setText(resultLabel.getText());
+            resultLabel.setText("");
+            hist = false;
+        }
         int value = Integer.parseInt(((Button) event.getSource()).getId().replace("btn", ""));
         resultLabel.setText(resultLabel.getText() + value);
     }
@@ -38,6 +44,7 @@ public class MainWindowController {
                 case "+" -> displayText(String.valueOf(num1+ num2));
             }
             operator = ".";
+            hist = true;
         }else if(symbols.equals("clear")){
             resultLabel.setText("");
             operator = ".";
