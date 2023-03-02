@@ -3,15 +3,27 @@
 }
 
 .button{
-    -fx-background-color: grey;
+    -fx-background-color: #343434;
+    -fx-text-fill: white;
+    -fx-background-radius: 100%;
+    -fx-pref-width: 35px;
 }
+
+
 
 .label{
-    -fx-background-color: white;
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-text-alignment: right;
 }
 
-#btn0{
-    -fx-background-radius: 100%;
-    -fx-pref-width: 30px;
-    -fx-pref-height: 30px;
+
+#clear{
+    -fx-background-color: #4f4f4f;
+    -fx-text-fill: white;
+}
+
+#divide, #multiply, #minus, #plus, #equals{
+    -fx-background-color: #fdb533;
+    -fx-text-fill: white;
 }

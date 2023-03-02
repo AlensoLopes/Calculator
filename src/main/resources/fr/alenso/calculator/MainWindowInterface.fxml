@@ -7,12 +7,10 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.alenso.calculator.MainWindowController">
+<AnchorPane prefHeight="300.0" prefWidth="377.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.alenso.calculator.MainWindowController">
    <children>
-      <Button fx:id="btnClose" layoutX="542.0" layoutY="1.0" mnemonicParsing="false" text="Close" />
-      <Button fx:id="btnMinimize" layoutX="478.0" layoutY="1.0" mnemonicParsing="false" text="minimize" />
-      <Label fx:id="resultLabel" layoutX="100.0" layoutY="66.0" prefHeight="33.0" prefWidth="173.0" text="" />
-      <GridPane layoutX="100.0" layoutY="200.0">
+      <Label fx:id="historyLabel" layoutX="154.0" layoutY="14.0" prefHeight="33.0" prefWidth="69.0" text="" textAlignment="RIGHT" />
+      <GridPane layoutX="64.0" layoutY="102.0" prefHeight="150.0" prefWidth="284.0">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -27,25 +25,25 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="btn7" mnemonicParsing="false" onAction="#onNumberClicked" text="7" />
-            <Button fx:id="btn8" mnemonicParsing="false" onAction="#onNumberClicked" text="8" GridPane.columnIndex="1" />
-            <Button fx:id="btn9" mnemonicParsing="false" onAction="#onNumberClicked" text="9" GridPane.columnIndex="2" />
-            <Button fx:id="btn4" layoutX="210.0" layoutY="13.0" mnemonicParsing="false" onAction="#onNumberClicked" text="4" GridPane.rowIndex="1" />
-            <Button fx:id="btn5" mnemonicParsing="false" onAction="#onNumberClicked" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Button fx:id="btn6" mnemonicParsing="false" onAction="#onNumberClicked" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Button fx:id="divide" mnemonicParsing="false" onAction="#onOperatorClicked" text="/" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <Button fx:id="multiply" mnemonicParsing="false" onAction="#onOperatorClicked" text="*" GridPane.columnIndex="3" />
-            <Button fx:id="btn1" mnemonicParsing="false" onAction="#onNumberClicked" text="1" GridPane.rowIndex="2" />
-            <Button fx:id="point" mnemonicParsing="false" text="," GridPane.rowIndex="3" />
-            <Button fx:id="btn2" mnemonicParsing="false" onAction="#onNumberClicked" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Button fx:id="btn3" mnemonicParsing="false" onAction="#onNumberClicked" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Button fx:id="btn0" mnemonicParsing="false" onAction="#onNumberClicked" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Button fx:id="clear" mnemonicParsing="false" onAction="#onOperatorClicked" text="CLEAR" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="btn7" mnemonicParsing="false" onAction="#onNumberClicked" text="7" GridPane.rowIndex="1" />
+            <Button fx:id="btn8" mnemonicParsing="false" onAction="#onNumberClicked" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="btn9" mnemonicParsing="false" onAction="#onNumberClicked" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="btn4" layoutX="210.0" layoutY="13.0" mnemonicParsing="false" onAction="#onNumberClicked" text="4" GridPane.rowIndex="2" />
+            <Button fx:id="btn5" mnemonicParsing="false" onAction="#onNumberClicked" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="btn6" mnemonicParsing="false" onAction="#onNumberClicked" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="divide" mnemonicParsing="false" onAction="#onOperatorClicked" text="/" GridPane.columnIndex="3" />
+            <Button fx:id="multiply" mnemonicParsing="false" onAction="#onOperatorClicked" prefHeight="18.0" prefWidth="21.0" text="*" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="btn1" mnemonicParsing="false" onAction="#onNumberClicked" text="1" GridPane.rowIndex="3" />
+            <Button fx:id="point" mnemonicParsing="false" text="," GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button fx:id="btn2" mnemonicParsing="false" onAction="#onNumberClicked" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="btn3" mnemonicParsing="false" onAction="#onNumberClicked" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="btn0" mnemonicParsing="false" onAction="#onNumberClicked" prefHeight="25.0" prefWidth="17.0" text="0" GridPane.rowIndex="4" />
+            <Button fx:id="clear" mnemonicParsing="false" onAction="#onOperatorClicked" text="AC" />
             <Button fx:id="minus" mnemonicParsing="false" onAction="#onOperatorClicked" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
             <Button fx:id="plus" mnemonicParsing="false" onAction="#onOperatorClicked" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
             <Button fx:id="equals" mnemonicParsing="false" onAction="#onOperatorClicked" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" />
          </children>
       </GridPane>
-      <Label fx:id="historyLabel" layoutX="413.0" layoutY="73.0" prefHeight="33.0" prefWidth="173.0" text="" />
+      <Label fx:id="resultLabel" layoutX="154.0" layoutY="68.0" prefHeight="33.0" prefWidth="69.0" text="" textAlignment="RIGHT" />
    </children>
 </AnchorPane>

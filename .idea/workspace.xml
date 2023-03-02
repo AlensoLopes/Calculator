@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57d5e1b5-2f09-4008-89d7-a04376620053" name="Changes" comment="Push change -&gt; 27/02/23 &#10;- Cannot / by 0&#10;- Now includes number with more than 1 figure">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fr/alenso/calculator/style.css" afterDir="false" />
+    <list default="true" id="57d5e1b5-2f09-4008-89d7-a04376620053" name="Changes" comment="Push change -&gt; 02/03/23&#10;+ Css changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/alenso/calculator/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/alenso/calculator/MainWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/alenso/calculator/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/alenso/calculator/MainWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fr/alenso/calculator/MainWindowInterface.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fr/alenso/calculator/MainWindowInterface.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fr/alenso/calculator/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fr/alenso/calculator/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,24 +39,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_directory_selection": "C:/JetBrains/JavaFX/Calculator/src/main/java/fr/alenso/calculator",
-    "last_opened_file_path": "C:/JetBrains/Java/Cours-Java",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/JetBrains/JavaFX/Calculator/src/main/java/fr/alenso/calculator&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/JetBrains/Java/Cours-Java&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="fr.alenso.calculator.Main" />
@@ -81,7 +81,8 @@
       <workItem from="1677492173985" duration="105000" />
       <workItem from="1677528369351" duration="1829000" />
       <workItem from="1677565079367" duration="8000" />
-      <workItem from="1677701922508" duration="1283000" />
+      <workItem from="1677701922508" duration="1510000" />
+      <workItem from="1677766776690" duration="3528000" />
     </task>
     <task id="LOCAL-00001" summary="Push change -&gt; 27/02/23 &#10;- Cannot / by 0&#10;- Now includes number with more than 1 figure">
       <created>1677530018252</created>
@@ -90,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677530018252</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Push change -&gt; 01/03/23&#10;+ Add history&#10;+ Start with css">
+      <created>1677703426998</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677703426998</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +118,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Push change -&gt; 27/02/23 &#10;- Cannot / by 0&#10;- Now includes number with more than 1 figure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Push change -&gt; 27/02/23 &#10;- Cannot / by 0&#10;- Now includes number with more than 1 figure" />
+    <MESSAGE value="Push change -&gt; 01/03/23&#10;+ Add history&#10;+ Start with css" />
+    <MESSAGE value="Push change -&gt; 02/03/23&#10;+ Css changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Push change -&gt; 02/03/23&#10;+ Css changes" />
   </component>
 </project>

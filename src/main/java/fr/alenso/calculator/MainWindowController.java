@@ -9,15 +9,13 @@ import javafx.stage.Stage;
 public class MainWindowController {
 
     @FXML private Label resultLabel, historyLabel;
-    @FXML private Button btnClose, btnMinimize;
 
     String operator = "";
     private int num1;
     private boolean hist;
 
     public void init(Stage stage){
-        btnClose.setOnMouseClicked(mouseEvent -> stage.close());
-        btnMinimize.setOnMouseClicked(mouseEvent -> stage.setIconified(true));
+        /*resultLabel.setText("0");*/
     }
 
     public void onNumberClicked(ActionEvent event){
@@ -28,6 +26,7 @@ public class MainWindowController {
         }
         int value = Integer.parseInt(((Button) event.getSource()).getId().replace("btn", ""));
         resultLabel.setText(resultLabel.getText() + value);
+
     }
 
     public void onOperatorClicked(ActionEvent event){

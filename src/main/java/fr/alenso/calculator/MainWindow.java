@@ -15,10 +15,8 @@ public class MainWindow extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("MainWindowInterface.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
-        scene.setFill(Color.TRANSPARENT);
         stage.setScene(scene);
         stage.setResizable(false);
-        stage.initStyle(StageStyle.TRANSPARENT);
         stage.show();
         ((MainWindowController)loader.getController()).init(stage);
     }
